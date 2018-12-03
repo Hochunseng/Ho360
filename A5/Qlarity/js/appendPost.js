@@ -86,7 +86,10 @@ function appendPost() {
         postLocation.insertAdjacentElement('beforebegin', divClone);
         divClone.insertAdjacentElement('afterend', document.createElement("br"));
 
-        document.getElementsByClassName("heart")[0].setAttribute("onclick", "changeImage(this,0)");
+        //document.getElementsByClassName("heart")[0].setAttribute("onclick", "changeImage(this,0)");
+        for(i = 0; i < document.getElementsByClassName("heart").length;i++) {
+            document.getElementsByClassName("heart")[i].setAttribute("onclick", "changeImage(this," + i + ")");
+        }
     }
 
     if(recommendation) {
@@ -128,7 +131,10 @@ function appendPost() {
         recommendationLoc.insertAdjacentElement('beforebegin', divClone);
         divClone.insertAdjacentElement('afterend', document.createElement("br"));
 
-        document.getElementsByClassName("heart")[4].setAttribute("onclick", "changeImage(this,4)");
+        //document.getElementsByClassName("heart")[4].setAttribute("onclick", "changeImage(this,4)");
+        for(i = 0; i < document.getElementsByClassName("heart").length;i++) {
+            document.getElementsByClassName("heart")[i].setAttribute("onclick", "changeImage(this," + i + ")");
+        }
     }
 
 }
