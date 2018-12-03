@@ -78,7 +78,7 @@ function appendPost() {
         var changeCollapse = divClone.querySelector('.collapse');
         changeCollapse.setAttribute("id", "q-nocomment2");
 
-        localStorage.setItem("questionClone", divClone);
+        localStorage.setItem("questionClone", JSON.stringify(divClone));
 
         var questionTab = document.getElementById("questionTab");
 
@@ -123,6 +123,7 @@ function appendPost() {
         var changeCollapse = divClone.querySelector('.collapse');
         changeCollapse.setAttribute("id", "q-nocomment3");
 
+        localStorage.setItem("recommendationClone", JSON.stringify(divClone));
 
         var questionTab = document.getElementById("recommendationTab");
         console.log(questionTab);

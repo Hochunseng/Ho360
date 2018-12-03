@@ -77,7 +77,10 @@ function appendPostProfile() {
         divClone.insertAdjacentElement('afterend', document.createElement("br"));
 
 
-        document.getElementsByClassName("heart")[0].setAttribute("onclick", "changeImage(this,0)");
+        //document.getElementsByClassName("heart")[0].setAttribute("onclick", "changeImage(this,0)");
+        for(i = 0; i < document.getElementsByClassName("heart").length;i++) {
+            document.getElementsByClassName("heart")[i].setAttribute("onclick", "changeImage(this," + i + ")");
+        }
 
 
     }
@@ -92,7 +95,7 @@ function appendPostProfile() {
         console.log(divClone);
 
         var postBody = divClone.querySelector('#postBody');
-        postBody.innerHTML = content;
+        postBody.innerHTML = recommendation;
 
         var name = localStorage.getItem("username");
         var changeName = divClone.querySelector('#name');
@@ -128,7 +131,10 @@ function appendPostProfile() {
         divClone.insertAdjacentElement('afterend', document.createElement("br"));
 
 
-        document.getElementsByClassName("heart")[0].setAttribute("onclick", "changeImage(this,2)");   
+        //document.getElementsByClassName("heart")[0].setAttribute("onclick", "changeImage(this,2)");   
+        for(i = 0; i < document.getElementsByClassName("heart").length;i++) {
+            document.getElementsByClassName("heart")[i].setAttribute("onclick", "changeImage(this," + i + ")");
+        }
     }
 
 
