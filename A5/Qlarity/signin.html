@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>sign in</title>
+<link rel="stylesheet" type="text/css" href="css/signin.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/homeDesign.css">
+</head>
+<body id="body">
+<p id="logo"> qlarity </p>
+<div class="login-page">
+  <div class="form">
+    <form class="register-form">
+      <input type="text" placeholder="name"/>
+      <input type="password" placeholder="password"/>
+      <input type="text" placeholder="email address"/>
+      <button>create</button>
+      <p class="message">Already registered? <a href="index.html">Sign In</a></p>
+    </form>
+    <form class="login-form">
+      <input type="text" placeholder="username" id="username"/>
+      <input type="password" placeholder="password"/>
+        <button onclick="store()" type="submit" formaction="index.html">sign in</button>
+      <p class="message">Not registered? <a href="signup.html">Create an account</a></p>
+    </form>
+  </div>
+</div>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="js/signin.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> qlarity | Profile </title>
+  <link href="css/profile.css" rel="stylesheet" />
+  <link href="css/homeDesign.css" rel="stylesheet" />
+  <ul class = "col-sm-12">
+    <div id="menu" class="col-sm-4">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="css/navbar.css">
+      <link rel="stylesheet" type="text/css" href="css/post.css">
+      <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="post.html">Make a Post</a>
+      <font color="#818181"><h4 id="following">Following</h4></font>
+      <font color="#818181"><h4>Explore</h4></font>
+      <a href="acne.html">#acne</a>
+      <a href="antiaging.html">#anti-aging</a>
+      <a href="combo.html">#combo</a>
+      <a href="dryness.html">#dryness</a>
+      <a href="normal.html">#normal</a>
+      <a href="oily.html">#oily</a>
+      <a href="pigmentation.html">#pigmentation</a>
+      <a href="redness.html">#redness</a>
+      <a href="sensitive.html">#sensitive</a>
+      <a href="other.html">#other</a>
+    </div>
+
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <p class="logo"><a href="index.html" id="home-link"> qlarity </a></p>
+  </div>
+  <div id="signout" class="col-sm-4">
+    <p onload="getUsername()" id="welcomeMessage"></p>
+    <p><a href="signin.html"> Sign Out </a></p>
+  </div>
+  </ul>
+  </head>
+
+<body id="body">
+  <div class="user-basics">
+    <ul class="col-sm-12">
+      <div class="col-sm-2" id="userimage">
+        <img src="images/default-avatar.png" class="big-profpic" height="100px" width="100px" alt="Profile Picture">
+      </div>
+      <div class="col-sm-10" id="username">
+        <h2 class="profileName"> Jessica Ngo </h2>
+      </div>
+    </ul>
+  </div>
+
+  <h3 class="category"> My Questions </h3>
+  <div class="question" id="post">
+    <ul class="col-sm-12">
+      <div class="col-sm-4" id="image">
+        <br />
+        <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
+      </div>
+      <div class="col-sm-8">
+        <h2 id="name" class="profileName">Jessica Ngo</h2>
+        <p id="time">3:14 pm</p>
+      </div>
+    </ul>
+    <p id="postBody">
+      I have a question about sunscreen products.
+      I'm currently using Neutrogena sunscreen but it's causing my skin to break out.
+      Does anyone have any recommendations for other sunscreens that are good for acne-prone skin?
+    </p>
+        <div class="feature">
+          <img src="images/heart.png" id="toggleButton" class="heart" height="20px" width="20px" alt="heart" onclick="changeImage(this, 1)">
+          <span class="heartCount">2 Likes</span>
+            &nbsp; &nbsp;
+          <a href="acne.html" id="hashtag"> #acne </a>
+          <a class="btn" data-toggle="collapse" data-target="#q-firstcomment"> View Comments (1) </a>
+        </div>
+   
+  
+  <!-- comment on post -->
+        <div class="collapse" id="q-firstcomment">
+          <ul class="col-sm-12">
+            <div class="col-sm-4" id="image">
+              <br />
+              <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
+            </div>
+            <div class="col-sm-8">
+              <h2 id="name"> Marina Grace </h2>
+              <p id="time"> 11:35 am </p>
+            </div>
+          </ul>
+          <p id="postBody"> I recommend trying Coola sunscreen. You can get it from Sephora in stores or online! </p>
+          <!-- reply -->
+          <div class="reply">
+            <ul class="col-sm-12">
+              <div class="col-sm-4" id="image">
+                <img src="images/default-avatar.png" class="comment-profpic" height="50px" width="50px"alt="Profile Picture">
+              </div>
+              <div class="col-sm-8">
+                <h3 class="profileName" id="commentName"> Name </h3>
+                <br />
+              </div>
+              <textarea class="replyBox" placeholder=" Enter your comment here..."></textarea>
+              <div class="replyButton">
+                <button type="submit"> Comment </button>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+<!-- </div> -->
+
+  <h3 class="category"> My Recommendations </h3>
+  <div class="recommendation" id="post">
+    <ul class="col-sm-12">
+      <div class="col-sm-4" id="image">
+        <br />
+        <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
+      </div>
+      <div class="col-sm-8">
+        <h2 id="name" class="profileName">Jessica Ngo</h2>
+        <p id="time">2:11 pm</p>
+      </div>
+    </ul>
+    <p id="postBody">
+      I found a really great toner for oily skin!
+      It's the Tea Tree Oil Toner from The Body Shop and I use it every day after washing my face with cleanser.
+      I recommend it for anyone with who has problems with shiny or oily skin.
+    </p>
+      <div class="feature">
+        <img src="images/heart.png" id="toggleButton" class="heart" height="20px" width="20px" alt="heart" onclick="changeImage(this, 3)">
+        <span class="heartCount">4 Likes</span>
+        &nbsp; &nbsp;
+        <a href="oily.html">#oily</a>
+        <a class="btn" data-toggle="collapse" data-target="#r-nocomment"> View Comments (0) </a>
+      </div>
+      <!-- reply -->
+      <div class="collapse" id="r-nocomment">
+        <ul class="col-sm-12">
+          <div class="col-sm-4" id="image">
+            <img src="images/default-avatar.png" class="comment-profpic" height="50px" width="50px"alt="Profile Picture">
+          </div>
+          <div class="col-sm-8">
+            <h3 class="profileName" id="commentName"> Name </h3>
+            <br />
+          </div>
+          <textarea class="replyBox" placeholder=" Enter your comment here..."></textarea>
+          <div class="replyButton">
+            <button type="submit"> Comment </button>
+          </div>
+        </ul>
+      </div>
+  </div>
+</div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/heartToggle.js"></script>
+  <script src="js/profile.js"></script>
+  <script src="js/welcomeMessage.js"></script>
+  <script src="js/navbar.js"></script>
+  <script src="js/tab.js"></script>
+  <script src="js/appendPostProfile.js"></script>
+  <script src="js/post.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

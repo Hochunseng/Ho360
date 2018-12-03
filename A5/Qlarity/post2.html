@@ -1,0 +1,352 @@
+<html>
+<head>
+  <title> qlarity | Post </title>
+  <link rel="stylesheet" href="css/posting2.css">
+  <link rel="stylesheet" href="css/homeDesign.css">
+  <script src="js/tab.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="js/welcomeMessage.js"></script>
+  <ul class = "col-sm-12">
+    <div id="menu" class= "col-sm-4">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="css/navbar.css">
+      <title>Post</title>
+      <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="post.html">Post</a>
+      <font color="#818181"><h4>Following</h4></font>
+      <font color="#818181"><h4>Explore</h4></font>
+      <a href="acne.html">#acne</a>
+      <a href="antiaging.html">#anti-aging</a>
+      <a href="combo.html">#combo</a>
+      <a href="dryness.html">#dryness</a>
+      <a href="normal.html">#normal</a>
+      <a href="oily.html">#oily</a>
+      <a href="pigmentation.html">#pigmentation</a>
+      <a href="redness.html">#redness</a>
+      <a href="sensitive.html">#sensitive</a>
+      <a href="other.html">#other</a>
+    </div>
+
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
+    </div>
+  </div>
+  <div class = "col-sm-4">
+    <p class="logo"><a href="index.html" id="home-link"> qlarity </a></p>
+  </div>
+  <div id="signout" class = "col-sm-4">
+    <p onload="getUsername()" id="welcomeMessage"></p>
+    <p><a href="signin.html"> Sign Out </a></p>
+  </div>
+</ul>
+</head>
+
+<body id="body">
+
+<div id="comments"></div>
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'questionTab')" autofocus>Ask a Question</button>
+    <button class="tablinks" onclick="openCity(event, 'recommendationTab')">Post a Recommendation</button>
+  </div>
+
+  <!-- to post a question -->
+  <div id="questionTab" class="tabcontent">
+    <h3> What skin concern do you need help with? </h3>
+    <form class="textInput" action="" method="get">
+      <fieldset>
+      <textarea name="myTextBox" class="response textBox" placeholder=" Type response here..."></textarea>
+      <div id="addImage">
+        <form action="">
+        </form>
+      </div>
+      <br />
+      <form class="select_tags" required="required">
+        <p> Select which skin concern(s) you are addressing: </p>
+        <input class="check" type="checkbox" name="concern" value="#acne"/>
+          <a class="button" href="#acne-descript"> #acne </a>
+          <div id="acne-descript" class="overlay">
+	           <div class="popup">
+		             <h2> #acne </h2>
+		             <a class="close" href="#">&times;</a>
+		             <div class="content">
+			                Acne is a skin condition that occurs when hair follicles plug with oil and dead skin cells.
+                      Symptoms range from uninflamed blackheads to pus-filled pimples or large, red, and tender bumps.
+		             </div>
+	          </div>
+          </div>
+        <input class="check" type="checkbox" name="concern" value="#anti-aging"/>
+          <a class="button" href="#antiaging-descript"> #anti-aging </a>
+          <div id="antiaging-descript" class="overlay">
+           <div class="popup">
+               <h2> #anti-aging </h2>
+               <a class="close" href="#">&times;</a>
+               <div class="content">
+                    Anti-aging products and routines make the user look younger by reducing, masking or preventing signs of skin aging.
+                    These signs may include wrinkles, fine lines, and loss of elasticity.
+               </div>
+             </div>
+           </div>
+        <input class="check" type="checkbox" name="concern" value="#combo"/>
+          <a class="button" href="#combo-descript"> #combo </a>
+          <div id="combo-descript" class="overlay">
+            <div class="popup">
+              <h2> #combo </h2>
+              <a class="close" href="#">&times;</a>
+              <div class="content">
+                Combination skin is simply having oily skin in some areas of your face and dry skin in other areas.
+                Typically, there's a mix of oily and dry areas on different parts of your face, with the t-zone
+                (forehead, nose, and chin) being slightly to very oily.
+              </div>
+            </div>
+          </div>
+        <input class="check" type="checkbox" name="concern" value="#dryness"/>
+          <a class="button" href="#dryness-descript"> #dryness </a>
+          <div id="dryness-descript" class="overlay">
+            <div class="popup">
+              <h2> #dryness </h2>
+              <a class="close" href="#">&times;</a>
+              <div class="content">
+                Dry skin is an uncomfortable condition marked by scaling, itching, and cracking.
+                Even if your skin tends to be oily, you can develop dry skin from time to time.
+                Dry skin can affect any part of your body, but most commonly affects hands, arms, and legs.
+              </div>
+            </div>
+          </div>
+        <input class="check" type="checkbox" name="concern" value="#normal"/>
+          <a class="button" href="#normal-descript"> #normal </a>
+          <div id="normal-descript" class="overlay">
+           <div class="popup">
+               <h2> #normal </h2>
+               <a class="close" href="#">&times;</a>
+               <div class="content">
+                 Normal skin has a good balance of moisture, small pores and an even tone, and is the goal of most skin care regimens.
+               </div>
+             </div>
+           </div>
+        <br />
+        <input class="check" type="checkbox" name="concern" value="#oily"/>
+          <a class="button" href="#oily-descript"> #oily </a>
+          <div id="oily-descript" class="overlay">
+            <div class="popup">
+              <h2> #oily </h2>
+              <a class="close" href="#">&times;</a>
+              <div class="content">
+                Oily skin is the result of the overproduction of sebum from sebaceous glands.
+                Sebum helps protect and moisturize your skin and keeps your hair shiny and healthy.
+                Too much sebum, however, may lead to oily skin, which can then lead to clogged pores and acne.
+              </div>
+            </div>
+          </div>
+        <input class="check" type="checkbox" name="concern" value="#pigmentation"/>
+          <a class="button" href="#pigmentation-descript"> #pigmentation </a>
+          <div id="pigmentation-descript" class="overlay">
+            <div class="popup">
+             <h2> #pigmentation </h2>
+             <a class="close" href="#">&times;</a>
+             <div class="content">
+               Hyperpigmentation is a common, usually harmless condition in which patches of skin become darker in color than the normal surrounding skin.
+               It is also known as sun spots, age spots, dark spots, or post-inflammatory hyperpigmentation, which is a result of the inflammation acne can cause.
+             </div>
+           </div>
+         </div>
+        <input class="check" type="checkbox" name="concern" value="#redness"/>
+          <a class="button" href="#redness-descript"> #redness </a>
+          <div id="redness-descript" class="overlay">
+            <div class="popup">
+             <h2> #redness </h2>
+             <a class="close" href="#">&times;</a>
+             <div class="content">
+               Perhaps the most widely documented cause of redness is rosacea, a condition that causes redness and often small, red, pus-filled bumps on the face.
+               Sensitive skin can also be prone to redness if it comes into contact with irritating ingredients.
+             </div>
+           </div>
+         </div>
+        <input class="check" type="checkbox" name="concern" value="#sensitive"/>
+          <a class="button" href="#sensitive-descript"> #sensitive </a>
+          <div id="sensitive-descript" class="overlay">
+            <div class="popup">
+             <h2> #sensitive </h2>
+             <a class="close" href="#">&times;</a>
+             <div class="content">
+               Sensitive skin is prone to itching and irritation when coming into contact with certain cosmetics and skincare products.
+             </div>
+           </div>
+         </div>
+        <input class="check" type="checkbox" name="concern" value="#other"/>
+          <a class="button" href="#other-descript"> #other </a>
+          <div id="other-descript" class="overlay">
+            <div class="popup">
+              <h2> #other </h2>
+              <a class="close" href="#">&times;</a>
+              <div class="content">
+                Select this tag for any skincare concern that does not fall under any of the other nine listed categories.
+              </div>
+            </div>
+          </div>
+      </form>
+      <p>
+        If you are unsure of which concern to select,
+        <br>
+        click on the hashtag to read a short description of it
+      </p>
+      <form action="index.html">
+        <input type="submit" class="submitbutton" onclick="storeQuestion(0)"/>
+      </form>
+    </fieldset>
+    </form>
+  </div>
+
+  <!-- to post a recommendation -->
+  <div id="recommendationTab" class="tabcontent" style="display:none">
+    <h3> What product or routine do you recommend? </h3>
+    <form class="textInput" action="" method="get">
+      <fieldset>
+      <textarea name="myTextBox" class="response textBox" placeholder=" Type response here..."></textarea>
+      <div id="addImage">
+        <form action="">
+        </form>
+      </div>
+      <br />
+      <form class="select_tags" required="required">
+        <p> Select which skin concern(s) you are addressing: </p>
+        <input class="check" type="checkbox" name="concern" value="#acne"/>
+          <a class="button" href="#acne-descript-rec"> #acne </a>
+          <div id="acne-descript-rec" class="overlay">
+	           <div class="popup">
+		             <h2> #acne </h2>
+		             <a class="close" href="#">&times;</a>
+		             <div class="content">
+			                Acne is a skin condition that occurs when hair follicles plug with oil and dead skin cells.
+                      Symptoms range from uninflamed blackheads to pus-filled pimples or large, red, and tender bumps.
+		             </div>
+	          </div>
+          </div>
+        <input class="check" type="checkbox" name="concern" value="#anti-aging"/>
+          <a class="button" href="#antiaging-descript-rec"> #anti-aging </a>
+          <div id="antiaging-descript-rec" class="overlay">
+           <div class="popup">
+               <h2> #anti-aging </h2>
+               <a class="close" href="#">&times;</a>
+               <div class="content">
+                    Anti-aging products and routines make the user look younger by reducing, masking or preventing signs of skin aging.
+                    These signs may include wrinkles, fine lines, and loss of elasticity.
+               </div>
+             </div>
+           </div>
+        <input class="check" type="checkbox" name="concern" value="#combo"/>
+          <a class="button" href="#combo-descript-rec"> #combo </a>
+          <div id="combo-descript-rec" class="overlay">
+            <div class="popup">
+              <h2> #combo </h2>
+              <a class="close" href="#">&times;</a>
+              <div class="content">
+                Combination skin is simply having oily skin in some areas of your face and dry skin in other areas.
+                Typically, there's a mix of oily and dry areas on different parts of your face, with the t-zone
+                (forehead, nose, and chin) being slightly to very oily.
+              </div>
+            </div>
+          </div>
+        <input class="check" type="checkbox" name="concern" value="#dryness"/>
+          <a class="button" href="#dryness-descript-rec"> #dryness </a>
+          <div id="dryness-descript-rec" class="overlay">
+            <div class="popup">
+              <h2> #dryness </h2>
+              <a class="close" href="#">&times;</a>
+              <div class="content">
+                Dry skin is an uncomfortable condition marked by scaling, itching, and cracking.
+                Even if your skin tends to be oily, you can develop dry skin from time to time.
+                Dry skin can affect any part of your body, but most commonly affects hands, arms, and legs.
+              </div>
+            </div>
+          </div>
+        <input class="check" type="checkbox" name="concern" value="#normal"/>
+          <a class="button" href="#normal-descript-rec"> #normal </a>
+          <div id="normal-descript-rec" class="overlay">
+           <div class="popup">
+               <h2> #normal </h2>
+               <a class="close" href="#">&times;</a>
+               <div class="content">
+                 Normal skin has a good balance of moisture, small pores and an even tone, and is the goal of most skin care regimens.
+               </div>
+             </div>
+           </div>
+        <br />
+        <input class="check" type="checkbox" name="concern" value="#oily"/>
+          <a class="button" href="#oily-descript-rec"> #oily </a>
+          <div id="oily-descript-rec" class="overlay">
+            <div class="popup">
+              <h2> #oily </h2>
+              <a class="close" href="#">&times;</a>
+              <div class="content">
+                Oily skin is the result of the overproduction of sebum from sebaceous glands.
+                Sebum helps protect and moisturize your skin and keeps your hair shiny and healthy.
+                Too much sebum, however, may lead to oily skin, which can then lead to clogged pores and acne.
+              </div>
+            </div>
+          </div>
+        <input class="check" type="checkbox" name="concern" value="#pigmentation"/>
+          <a class="button" href="#pigmentation-descript-rec"> #pigmentation </a>
+          <div id="pigmentation-descript-rec" class="overlay">
+            <div class="popup">
+             <h2> #pigmentation </h2>
+             <a class="close" href="#">&times;</a>
+             <div class="content">
+               Hyperpigmentation is a common, usually harmless condition in which patches of skin become darker in color than the normal surrounding skin.
+               It is also known as sun spots, age spots, dark spots, or post-inflammatory hyperpigmentation, which is a result of the inflammation acne can cause.
+             </div>
+           </div>
+         </div>
+        <input class="check" type="checkbox" name="concern" value="#redness"/>
+          <a class="button" href="#redness-descript-rec"> #redness </a>
+          <div id="redness-descript-rec" class="overlay">
+            <div class="popup">
+             <h2> #redness </h2>
+             <a class="close" href="#">&times;</a>
+             <div class="content">
+               Perhaps the most widely documented cause of redness is rosacea, a condition that causes redness and often small, red, pus-filled bumps on the face.
+               Sensitive skin can also be prone to redness if it comes into contact with irritating ingredients.
+             </div>
+           </div>
+         </div>
+        <input class="check" type="checkbox" name="concern" value="#sensitive"/>
+          <a class="button" href="#sensitive-descript-rec"> #sensitive </a>
+          <div id="sensitive-descript-rec" class="overlay">
+            <div class="popup">
+             <h2> #sensitive </h2>
+             <a class="close" href="#">&times;</a>
+             <div class="content">
+               Sensitive skin is prone to itching and irritation when coming into contact with certain cosmetics and skincare products.
+             </div>
+           </div>
+         </div>
+        <input class="check" type="checkbox" name="concern" value="#other"/>
+          <a class="button" href="#other-descript-rec"> #other </a>
+          <div id="other-descript-rec" class="overlay">
+            <div class="popup">
+              <h2> #other </h2>
+              <a class="close" href="#">&times;</a>
+              <div class="content">
+                Select this tag for any skincare concern that does not fall under any of the other nine listed categories.
+              </div>
+            </div>
+          </div>
+      </form>
+      <p>
+        If you are unsure of which concern to select,
+        <br>
+        click on the hashtag to read a short description of it
+      </p>
+      <form action="index.html">
+        <input type="submit" class="submitbutton" onclick="storeRecommendation(1)"/>
+      </form>
+    </fieldset>
+    </form>
+  </div>
+
+  <script src="js/navbar.js"></script>
+  <script src="js/post.js"></script>
+</body>
+</html>

@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant|Noto+Serif+JP');
+#body {
+  background-image: url("../images/background-image.jpg");
+  background-size: cover;
+  font-family: 'Noto Serif JP', sans-serif;
+}
+.category {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+#title {
+  display: inline-block;
+  padding-right: 10px;
+}
+.description {
+  text-align: center;
+  width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+}
+.question {
+  background-color: white;
+}
+.collapse {
+  background-color: white;
+}
+#home-title {
+  text-align: center;
+}
+.logo {
+  font-family: SignPainter;
+  font-size: 50px;
+  text-align: center;
+}
+#home-link:link {
+  text-decoration: none;
+}
+#home-link:hover {
+  text-decoration-line: none;
+  color: #337ab7;
+}
+
+#post {
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+    width: 400px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#loginWelcome {
+    text-align: right;
+}
+
+#name {
+    text-align: left;
+    font-size: 20px;
+}
+
+#time {
+    text-align: left;
+    margin-right: 160px;
+    margin-left: -45px;
+    width: 100px;
+}
+
+#postBody {
+    text-align: left;
+}
+#postInfo {
+    text-align: left;
+}
+
+.feature {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#userimage {
+  padding-left: 35px;
+}
+
+.tab {
+    text-align: center;
+}
+
+#heading {
+    text-align: center;
+}
+
+img.profpic {
+  border-radius: 50%;
+  margin-top:10px;
+}
+
+#title {
+  text-align: right;
+}
+
+#follow {
+  align-self: left;
+  margin-top: 30px;
+  color: white;
+  background-color: #008CBA;
+}
+
+body {
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+/* formatting picture, name & time within text box */
+.profpic {
+  margin-left: -50px;
+  border-radius: 50%;
+}
+#name {
+  margin-left: -45px;
+  margin-top: 25px;
+}
+
+#comment {
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  width: 400px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#postcomment {
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  width: 300px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#textbox {
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  width: 200px;
+  margin-top: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#reccomment {
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  width: 400px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#acnecomment {
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  width: 400px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#taylorcomment, #maria_comments {
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  width: 400px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.feature {
+  text-align: center;
+  margin-left: -30px;
+  width: 400px;
+}
+
+
+/* styles comments on question posts */
+#q-firstcomment, #q-secondcomment, #q-thirdcomment {
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  width: 400px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* styles comments on recommendation posts */
+#r-firstcomment, #r-secondcomment {
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  width: 400px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* styles reply div underneath comments */
+#commentName {
+  text-align: left;
+  margin-top: 25px;
+  margin-left: -28px;
+  font-size: 21px;
+}
+
+.reply {
+  border-style: solid;
+  border-width: 0px;
+  border-top-width: 1px;
+  width: 400px;
+  height: 225px;
+  margin-left: -42px;
+}
+/* the actual text box */
+.replyBox {
+  width: 300px;
+  height: 100px;
+  resize: none;
+}
+.replyButton {
+  margin-left: 200px;
+  margin-top: 10px;
+}
+/* when there are 0 comments */
+#q-nocomment {
+  border-style: solid;
+  border-width: 0px;
+  border-top-width: 1px;
+  width: 400px;
+  height: 225px;
+  margin-left: -42px;
+}
+#q-nocomment2 {
+  border-style: solid;
+  border-width: 0px;
+  border-top-width: 1px;
+  width: 400px;
+  height: 225px;
+  margin-left: -42px;
+}
+
+#q-nocomment3 {
+  border-style: solid;
+  border-width: 0px;
+  border-top-width: 1px;
+  width: 400px;
+  height: 225px;
+  margin-left: -42px;
+}
+
+#q-secondNocomment {
+  border-style: solid;
+  border-width: 0px;
+  border-top-width: 1px;
+  width: 400px;
+  height: 225px;
+  margin-left: -42px;
+}
+
+.comment-profpic {
+  margin-left: -50px;
+  border-radius: 50%;
+  text-align: left;
+  margin-left: 13px;
+  margin-top: 10px;
+}
+
+#breakline {
+  border-color: black;
+}
+
+/* styling the tabs */
+.tablinks {
+  position: relative;
+  background: white;
+  width: 200px;
+  height: 30px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.22), 0 5px 5px rgba(0, 0, 0, 0.22);
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  }
+.tablinks:hover {
+    opacity: 0.7;
+}
+.tablinks:focus {
+  outline: 0;
+  background: #337ab7;
+  color: white;
+}
+.active {
+  background-color: #337ab7;
+  color: white;
+}
+button {
+  border-radius: 5px;
+  background-color: #F0F0F0;
+}
+button:focus {
+  outline: 0;
+}

@@ -1,0 +1,240 @@
+<html>
+<head>
+
+  <ul class = "col-sm-12">
+    <div id="menu" class= "col-sm-4">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="css/navbar.css">
+      <link rel="stylesheet" type="text/css" href="css/post.css">
+      <link rel="stylesheet" href="css/homeDesign.css">
+      <title>#combo</title>
+      <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div id="sideBarLinks">
+      <a href="index.html">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="post.html">Make a Post</a>
+      <font color="#818181"><h4 id="following">Following</h4></font>
+      <font color="#818181"><h4>Explore</h4></font>
+      <a href="acne.html">#acne</a>
+      <a href="antiaging.html">#anti-aging</a>
+      <a href="combo.html">#combo</a>
+      <a href="dryness.html">#dryness</a>
+      <a href="normal.html">#normal</a>
+      <a href="oily.html">#oily</a>
+      <a href="pigmentation.html">#pigmentation</a>
+      <a href="redness.html">#redness</a>
+      <a href="sensitive.html">#sensitive</a>
+      <a href="other.html">#other</a>
+      </div>
+    </div>
+
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
+    </div>
+  </div>
+  <div class = "col-sm-4">
+    <p class="logo"><a href="index.html" id="home-link"> qlarity </a></p>
+  </div>
+  <div id="signout" class = "col-sm-4">
+    <p onload="getUsername()" id="welcomeMessage"></p>
+    <p><a href="signin.html"> Sign Out </a></p>
+  </div>
+</ul>
+</head>
+<body id="body">
+  <div class="category">
+    <h1 id="title"> #combo </h1>
+    <button onclick="change()" id="follow"> Follow </button>
+  </div>
+  <p class="description">
+    Combination skin is simply having oily skin in some areas of your face and dry skin in other areas.
+    Typically, there's a mix of oily and dry areas on different parts of your face, with the t-zone
+    (forehead, nose, and chin) being slightly to very oily.
+  </p>
+<!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'questionTab')" autofocus>View Questions</button>
+  <button class="tablinks" onclick="openCity(event, 'recommendationTab')">View Recommendations</button>
+</div>
+<!-- Tab content -->
+<!-- questions -->
+<div id="questionTab" class="tabcontent">
+    <h2 id="heading">Questions</h2>
+      <div class="question" id="post">
+        <ul class="col-sm-12">
+          <div class="col-sm-4" id="image">
+            <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
+          </div>
+          <div class="col-sm-8">
+            <h2 id="name">Lana Condor</h2>
+            <p id="time">11:10 am</p>
+          </div>
+        </ul>
+        <p id="postBody">
+          I have combination skin so my T-zone is oily but the rest of my face is dry. Does anyone know a good moisturizer that will be good for both dry and oily parts?
+        </p>
+        <div class="feature">
+          <img src="images/heart.png" id="toggleButton" class="heart" height="20px" width="20px" alt="heart" onclick="changeImage(this, 0)">
+          <span class="heartCount">3 Likes</span>
+          &nbsp; &nbsp;
+          <a href="combo.html"> #combo </a>
+          <a class="btn" data-toggle="collapse" data-target="#q-firstcomment"> View Comments (2) </a>
+        </div>
+       </div>
+       <!--these are the comments -->
+
+       <!-- <div class="collapse" id="comment"> -->
+       <div class="collapse" id="q-firstcomment">
+         <ul class="col-sm-12">
+           <div class="col-sm-4" id="image">
+             <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
+           </div>
+           <div class="col-sm-8">
+             <h2 id="name">
+               Kyle Nguyen
+             </h2>
+             <p id="time">
+               11:35 am
+             </p>
+           </div>
+         </ul>
+         <p id="postBody"> Pond's has a good moisturizer for combination skin. I got mine at Target a couple months ago and I love it! </p>
+         <hr id="breakline">
+      <!-- this is the second comment on the post -->
+        <div class="next-comment">
+         <ul class="col-sm-12">
+           <div class="col-sm-4" id="image">
+             <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
+           </div>
+           <div class="col-sm-8">
+             <h2 id="name">Andrew Wong</h2>
+             <p id="time">1:25 pm</p>
+          </div>
+        </div>
+     </ul>
+         <p id="postBody"> I use Aveeno daily moisturizer and it works great. </p>
+         <!-- reply -->
+         <div class="reply">
+           <ul class="col-sm-12">
+             <div class="col-sm-4" id="image">
+               <img src="images/default-avatar.png" class="comment-profpic" height="50px" width="50px"alt="Profile Picture">
+             </div>
+             <div class="col-sm-8">
+               <h3 class="profileName" id="commentName"> Name </h3>
+               <br />
+             </div>
+             <textarea class="replyBox" placeholder=" Enter your comment here..."></textarea>
+             <div class="replyButton">
+               <button type="submit"> Comment </button>
+             </div>
+           </ul>
+         </div>
+       </div>
+      <br>
+      <!-- next question -->
+      <div class="question" id="post">
+        <ul class="col-sm-12">
+          <div class="col-sm-4" id="image">
+            <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
+          </div>
+          <div class="col-sm-8">
+            <h2 id="name">Dana McDonald</h2>
+            <p id="time">9:25 am</p>
+          </div>
+        </ul>
+        <p id="postBody">
+          My skin gets really dry in the winter but it's oily in the summer. What would be a good moisturizer for the wintertime?
+        </p>
+        <div class="feature">
+            <img src="images/heart.png" id="toggleButton" class="heart" height="20px" width="20px" alt="heart" onclick="changeImage(this, 1)">
+            <span class="heartCount">1 Likes</span>
+            &nbsp; &nbsp;
+            <a href="combo.html">#combo</a>
+            <a class="btn" data-toggle="collapse" data-target="#q-nocomment"> View Comments (0) </a>
+        </div>
+        <!-- reply -->
+        <div class="collapse" id="q-nocomment">
+          <ul class="col-sm-12">
+            <div class="col-sm-4" id="image">
+              <img src="images/default-avatar.png" class="comment-profpic" height="50px" width="50px"alt="Profile Picture">
+            </div>
+            <div class="col-sm-8">
+              <h3 class="profileName" id="commentName"> Name </h3>
+              <br />
+            </div>
+            <textarea class="replyBox" placeholder=" Enter your comment here..."></textarea>
+            <div class="replyButton">
+              <button type="submit"> Comment </button>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- recommendations -->
+        <div id="recommendationTab" class="tabcontent" style="display:none">
+            <h2 id="heading">Recommendations</h2>
+            <div class="question" id="post">
+              <ul class="col-sm-12">
+                <div class="col-sm-4" id="image">
+                  <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
+                </div>
+                <div class="col-sm-8">
+                  <h2 id="name"> Melody Thompson </h2>
+                  <p id="time"> 4:31 pm </p>
+                </div>
+              </ul>
+            <p id="postBody">
+              Drunk Elephant has a really good product line for combination skin. It worked so well for me, and it's definitely worth the money!
+            </p>
+            <div class="feature">
+              <img src="images/heart.png" id="toggleButton" class="heart" height="20px" width="20px" alt="heart" onclick="changeImage(this, 2)">
+              <span class="heartCount">2 Likes</span>
+              &nbsp; &nbsp;
+              <a href="combo.html">#combo</a>
+              <a class="btn" data-toggle="collapse" data-target="#r-firstcomment">View Comments (1)</a>
+            </div>
+          </div>
+        </div>
+          <!-- the comment below the original recommendation post -->
+          <div class="collapse" id="r-firstcomment">
+            <ul class="col-sm-12">
+              <div class="col-sm-4" id="image">
+                <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
+              </div>
+              <div class="col-sm-8">
+                <h2 id="name"> Katie Johnson </h2>
+                <p id="time"> 10:35 am </p>
+              </div>
+            </ul>
+              <p id="postBody"> I agree, I love this product! </p>
+              <!-- reply -->
+              <div class="reply">
+                <ul class="col-sm-12">
+                  <div class="col-sm-4" id="image">
+                    <img src="images/default-avatar.png" class="comment-profpic" height="50px" width="50px"alt="Profile Picture">
+                  </div>
+                  <div class="col-sm-8">
+                    <h3 class="profileName" id="commentName"> Name </h3>
+                    <br />
+                  </div>
+                  <textarea class="replyBox" placeholder=" Enter your comment here..."></textarea>
+                  <div class="replyButton">
+                    <button type="submit"> Comment </button>
+                  </div>
+                </ul>
+              </div>
+          </div>
+        </div>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+      <script src="js/welcomeMessage.js"></script>
+      <script src="js/profile.js"></script>
+      <script src="js/navbar.js"></script>
+      <script src="js/tab.js"></script>
+      <script src="js/heartToggle.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

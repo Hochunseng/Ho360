@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>sign up</title>
+<link rel="stylesheet" type="text/css" href="css/signin.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/homeDesign.css">
+</head>
+<body id="body">
+  <p id="logo"> qlarity </p>
+  <div class="login-page">
+    <div class="form">
+      <form class="register-form">
+        <input type="text" placeholder="name"/>
+        <input type="password" placeholder="password"/>
+        <input type="text" placeholder="email address"/>
+        <button>create</button>
+        <p class="message">Already registered? <a href="signin.html">Sign In</a></p>
+      </form>
+      <form class="login-form">
+        <input type="firstname" placeholder="first name"/>
+        <input type="lastname" placeholder="last name"/>
+        <input type="text" placeholder="username" id="username"/>
+        <input type="password" placeholder="password"/>
+        <input type="email" placeholder="email"/>
+        <ul class="col-sm-12">
+          <div class="col-sm-6">
+            <button type="submit" formaction="signin.html">sign in</button>
+          </div>
+          <div class="col-sm-6">
+            <button onclick="store()"type="submit" formaction="index.html">sign up</button>
+          </div>
+        </ul>
+      </form>
+    </div>
+  </div>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="js/signup.js"></script>
+</body>
+</html>

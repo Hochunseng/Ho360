@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/homeDesign.css">
+
+
+        <link href="https://fonts.googleapis.com/css?family=Assistant|Noto+Serif+JP" rel="stylesheet">
+
+          <ul class = "col-sm-12">
+            <div id="menu" class= "col-sm-4">
+              <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+              <link rel="stylesheet" type="text/css" href="css/navbar.css">
+              <title>home</title>
+              <div id="mySidebar" class="sidebar">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="index.html">Home</a>
+              <a href="profile.html">Profile</a>
+              <a href="post.html">Make a Post</a>
+              <font color="#818181"><h4 id="following">Following</h4></font>
+              <font color="#818181"><h4>Explore</h4></font>
+              <a href="acne.html">#acne</a>
+              <a href="antiaging.html">#anti-aging</a>
+              <a href="combo.html">#combo</a>
+              <a href="dryness.html">#dryness</a>
+              <a href="normal.html">#normal</a>
+              <a href="oily.html">#oily</a>
+              <a href="pigmentation.html">#pigmentation</a>
+              <a href="redness.html">#redness</a>
+              <a href="sensitive.html">#sensitive</a>
+              <a href="other.html">#other</a>
+            </div>
+
+            <div id="main">
+              <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
+            </div>
+          </div>
+          <div class = "col-sm-4">
+            <!-- <p id="logo"><a href="index.html"> qlarity </a></p> -->
+            <p class="logo"><a href="index.html" id="home-link"> qlarity </a></p>
+          </div>
+          <div id="signout" class = "col-sm-4">
+            <p onload="getUsername()" id="welcomeMessage">Welcome, Jessica!</p>
+            <p><a href="signin.html">Sign Out</a></p>
+          </div>
+        </ul>
+    </head>
+    <body id="body">
+      <h1 id="home-title"> Home </h1>
+      <br />
+    <!-- Tab links -->
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'questionTab')" autofocus> View Questions </button>
+      <button class="tablinks" onclick="openCity(event, 'recommendationTab')"> View Recommendations </button>
+    </div>
+    <!-- Tab content -->
+    <!-- questions -->
+    <div id="questionTab" class="tabcontent">
+        <h2 id="heading">Questions</h2>
+        <div class="question" id="post">
+            <ul class="col-sm-12">
+              <div class="col-sm-4" id="image">
+                <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
+              </div>
+              <div class="col-sm-8">
+                <h2 id="name">Megan Smith</h2>
+                <p id="time">4:31 pm</p>
+              </div>
+            </ul>
+            <p id="postBody">
+              I've been breaking out and my acne has gotten worse. Can anyone suggest any good spot treatments for pimples?
+            </p>
+            <div class="feature">
+                <img src="images/heart.png" id="toggleButton" class="heart" height="20px" width="20px" alt="heart" onclick="changeImage(this, 1)">
+                <span class="heartCount">2 Likes</span>
+                &nbsp; &nbsp;
+                <a href="acne.html">#acne</a>
+                <a class="btn" data-toggle="collapse" data-target="#q-firstcomment">View Comments (1)</a>
+            </div>
+          </div>
+    <!-- comment on post -->
+          <div class="collapse" id="q-firstcomment">
+              <ul class="col-sm-12">
+                <div class="col-sm-4" id="image">
+                  <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
+                </div>
+                <div class="col-sm-8">
+                  <h2 id="name">Taylor Adams</h2>
+                  <p id="time">11:35 am</p>
+                </div>
+              </ul>
+              <p id="postBody">You should try pimple patches. You can order them on Amazon or get them from Target. </p>
+              <!-- reply -->
+              <div class="reply">
+                <ul class="col-sm-12">
+                  <div class="col-sm-4" id="image">
+                    <img src="images/default-avatar.png" class="comment-profpic" height="50px" width="50px"alt="Profile Picture">
+                  </div>
+                  <div class="col-sm-8">
+                    <h3 class="profileName" id="commentName"> Name </h3>
+                    <br >
+                  </div>
+                  <textarea class="replyBox" placeholder=" Enter your comment here..."></textarea>
+                  <div class="replyButton">
+                    <button type="submit" onclick="postComment(1)"> Comment </button>
+                  </div>
+                </ul>
+              </div>
+            </div>
+<!-- second question -->
+          <br>
+          <div class="question" id="post">
+            <ul class="col-sm-12">
+              <div class="col-sm-4" id="image">
+                <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
+              </div>
+              <div class="col-sm-8">
+                <h2 id="name">Maria Carr</h2>
+                <p id="time">11:10 am</p>
+              </div>
+            </ul>
+            <p id="postBody">
+              I have dark spots on my face and I'm looking for a treatment to lighten them up. Does anyone have any good product recommendations?
+            </p>
+            <div class="feature">
+                <img src="images/heart.png" id="toggleButton" class="heart" height="20px" width="20px" alt="heart" onclick="changeImage(this, 2)">
+                <span class="heartCount">2 Likes</span>
+                &nbsp; &nbsp;
+                <a href="pigmentation.html"> #pigmentation </a>
+                <a class="btn" data-toggle="collapse" data-target="#maria_comments"> View Comments (2) </a>
+            </div>
+           </div>
+        <!--these are the comments -->
+           <div class="collapse" id="maria_comments">
+             <ul class="col-sm-12">
+               <div class="col-sm-4" id="image">
+                 <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
+               </div>
+               <div class="col-sm-8">
+                 <h2 id="name">Christine Smith</h2>
+                 <p id="time">11:35 am</p>
+               </div>
+             </ul>
+             <p id="postBody">Hi Maria, I've tried BioOil oil and it works really well!</p>
+             <hr id="breakline">
+        <!-- this is the second comment on the post -->
+             <div>
+            <div class="next-comment">
+             <ul class="col-sm-12">
+               <div class="col-sm-4" id="image">
+                 <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
+               </div>
+               <div class="col-sm-8">
+                 <h2 id="name">Andy Robinson</h2>
+                 <p id="time">1:25 pm</p>
+              </div>
+         </ul>
+            <p id="postBody">Hey Maria, rosehip seed oil has worked so well for me. I suggest you try it too!</p>
+          </div>
+            <!-- reply -->
+            <div class="reply">
+              <ul class="col-sm-12">
+                <div class="col-sm-4" id="image">
+                  <img src="images/default-avatar.png" class="comment-profpic" height="50px" width="50px"alt="Profile Picture">
+                </div>
+                <div class="col-sm-8">
+                  <h3 class="profileName" id="commentName"> Name </h3>
+                  <br />
+                </div>
+                <textarea class="replyBox" placeholder=" Enter your comment here..."></textarea>
+                <div class="replyButton">
+                  <button type="submit" onclick="postComment(2)"> Comment </button>
+                </div>
+              </ul>
+            </div>
+            </div>
+           </div>
+          <br>
+          <!-- next question -->
+          <div class="question" id="post">
+            <ul class="col-sm-12">
+              <div class="col-sm-4" id="image">
+                <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
+              </div>
+              <div class="col-sm-8">
+                <h2 id="name">Catherine Lopez</h2>
+                <p id="time">9:25 am</p>
+              </div>
+            </ul>
+            <p id="postBody">
+              My skin is super oily and I want a face lotion that won't make me shiny. I've tried Aveeno but it doesn't work.
+              What brand of lotion would work best for me?
+            </p>
+            <div class="feature">
+                <img src="images/heart.png" id="toggleButton" class="heart" height="20px" width="20px" alt="heart" onclick="changeImage(this, 3)">
+                <span class="heartCount">2 Likes</span>
+                &nbsp; &nbsp;
+                <a id="hashtag" href="oily.html">#oily</a>
+                  <!--  <a href="index.html"> ts (0) </a> -->
+                    <a class="btn" data-toggle="collapse" data-target="#q-nocomment"> View Comments (0) </a>
+            </div>
+              <!-- reply -->
+              <div class="collapse" id="q-nocomment">
+                <ul class="col-sm-12">
+                  <div class="col-sm-4" id="image">
+                    <img src="images/default-avatar.png" class="comment-profpic" height="50px" width="50px"alt="Profile Picture">
+                  </div>
+                  <div class="col-sm-8">
+                    <h3 class="profileName" id="commentName"> Name </h3>
+                    <br />
+                  </div>
+                  <textarea class="replyBox" placeholder=" Enter your comment here..."></textarea>
+                  <div class="replyButton">
+                    <button type="submit" onclick="postComment(3)"> Comment </button>
+                  </div>
+                </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- recommendations -->
+            <div id="recommendationTab" class="tabcontent" style="display:none">
+                <h2 id="heading">Recommendations</h2>
+                <div class="question" id="post">
+                  <ul class="col-sm-12">
+                    <div class="col-sm-4" id="image">
+                      <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
+                    </div>
+                    <div class="col-sm-8">
+                      <h2 id="name">
+                        Anthony Davis
+                      </h2>
+                <p id="time">
+                  4:31 pm
+                </p>
+              </div>
+            </ul>
+                <p id="postBody">
+                  I found a really good treatment for acne. It's the Mario Badescu drying lotion. Just put it on your pimples before you go to sleep and you'll wake up with clearer skin!
+                </p>
+                <div class="feature">
+                  <img src="images/heart.png" id="toggleButton" class="heart" height="20px" width="20px" alt="heart" onclick="changeImage(this, 5)">
+                  <span class="heartCount">2 Likes</span>
+                  &nbsp; &nbsp;
+                  <a href="acne.html">#acne</a>
+                  <a class="btn" data-toggle="collapse" data-target="#reccomment">View Comments (1)</a>
+                </div>
+              </div>
+              <!-- the comment below the original recommendation post -->
+              <div class="collapse" id="reccomment">
+                <ul class="col-sm-12">
+                  <div class="col-sm-4" id="image">
+                    <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
+                  </div>
+                  <div class="col-sm-8">
+                    <h2 id="name"> Katherine Meyer </h2>
+                    <p id="time"> 10:35 am </p>
+                  </div>
+                </ul>
+                  <p id="postBody"> Can confirm, this works so well for me every time I break out. </p>
+                  <!-- reply -->
+                  <div class="reply">
+                    <ul class="col-sm-12">
+                      <div class="col-sm-4" id="image">
+                        <img src="images/default-avatar.png" class="comment-profpic" height="50px" width="50px"alt="Profile Picture">
+                      </div>
+                      <div class="col-sm-8">
+                        <h3 class="profileName" id="commentName"> Name </h3>
+                        <br />
+                      </div>
+                      <textarea class="replyBox" placeholder=" Enter your comment here..."></textarea>
+                      <div class="replyButton">
+                        <button type="submit" onclick="postComment(5)"> Comment </button>
+                      </div>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+      <script src="js/welcomeMessage.js"></script>
+      <script src="js/profile.js"></script>
+      <script src="js/navbar.js"></script>
+      <script src="js/tab.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="js/appendPost.js"></script>
+      <script src="js/postComment.js"></script>
+      <script src="js/tab.js"></script>
+      <script src="js/heartToggle.js"></script>
+      <script src="js/comment.js"></script>
+</body>
+</html>
